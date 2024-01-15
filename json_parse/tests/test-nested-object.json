@@ -1,0 +1,44 @@
+{
+    "_id": "657cba739b517381613175ee",
+    "index": 0,
+    "guid": "84aeb678-db53-4d2d-9d28-821c267a646d",    
+    "balance": "$3,991.91",
+    "picture": "http://placehold.it/32x32",
+    "age": 29,
+    "eyeColor": "green",
+    "name": "Barnett Tillman",
+    "gender": "male",
+    "company": "MARQET",
+    "email": "barnetttillman@marqet.com",
+    "phone": "+1 (830) 447-2500",
+    "address": "166 Seaview Court, Romeville, West Virginia, 6287",
+    "about": "Ad ex aliqua cupidatat reprehenderit commodo. Cupidatat ex id enim consequat elit est consequat consectetur ea labore occaecat exercitation amet nisi. Labore fugiat velit quis esse enim ex. Non nostrud amet qui enim in consequat sit.\r\n",
+    "registered": "2018-06-23T08:42:22 -06:-30",
+    "latitude": 6.349336,
+    "longitude": 127.330332,
+    "tags": [
+    "reprehenderit",
+    "qui",
+    "mollit",
+    "eu",
+    "eiusmod",
+    "culpa",
+    "anim"
+    ],
+    "friends": [
+    {
+        "id": 0,
+        "name": "Leach Keller"
+    },
+    {
+        "id": 1,
+        "name": "Davis Ellis"
+    },
+    {
+        "id": 2,
+        "name": "Conner Calhoun"
+    }
+    ],
+    "greeting": "Hello, Barnett Tillman! You have 9 unread messages.",
+    "favoriteFruit": "apple"
+}    

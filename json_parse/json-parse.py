@@ -97,13 +97,15 @@ def parse(json_string):
     return parsed_value
 
 if __name__ == "__main__":
-    # a few test cases
-    print(parse("\"abc\""))
-    print(parse("0.123"))
-    print(parse("1.23"))
-    print(parse("[1.2, 2.1, 3.5]"))
-    print(parse("[\"abcd\", \"def\", 1.2]"))
-    print(parse("[[1,2],[3,4],[\"abc\", \"def\"]]"))
-    print(parse("[[1,2],[3,4],[\"abc\", \"def\"]]"))
-    print(parse("{\"a\": 1}"))
-    print(parse("{\"a\": [1,2,3]}"))
+    # parses the json strings under json_parse/tests and prints the results
+    import pprint
+    import os
+    base_dir = os.path.join(os.getcwd(), "json_parse", "tests")    
+    for filename in os.listdir(base_dir):
+        filepath = os.path.join(base_dir, filename)
+        print(filepath + ":")        
+        with open(filepath, "r") as f:
+            s = f.read()
+            res = parse(s)
+            pprint.pprint(res)
+            print("----------------")
