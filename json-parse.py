@@ -96,23 +96,14 @@ def parse(json_string):
     parsed_value, remaining_str = parse_value(json_string)
     return parsed_value
 
-# print(parse_string("\"abc\""))
-# print(parse_string("\"abc"))
-# print(parse_number("0.123"))
-# print(parse_value("1.23"))
-# print(parse_value("\"abc"))
-# print(parse_value("\"abc\""))
-# print(parse_value(" \"abc\" "))
-# print(parse_value("\"\""))
-# print(parse_array("[1.2, 2, 3]"))
-# print(parse_array("[\"abcd\", \"def\", 1.2]"))
-# print(parse_array("[[1,2],[3,4],[\"abc\", \"def\"]]"))
-# print(parse_array("[[1,2],[3,4],[\"abc\", \"def\"]]"))
-# print(parse_object("{\"a\": 1}"))
-# print(parse_value("{\"a\": [1,2,3]}"))
-# import pprint
-# with open(r"D:\random_code_stuff\misc\json-test1.json", "r") as f:
-#     s = f.read()
-#     res, rem = parse_object(s)
-#     pprint.pprint(res)
-#     print(rem)
+if __name__ == "__main__":
+    # a few test cases
+    print(parse("\"abc\""))
+    print(parse("0.123"))
+    print(parse("1.23"))
+    print(parse("[1.2, 2.1, 3.5]"))
+    print(parse("[\"abcd\", \"def\", 1.2]"))
+    print(parse("[[1,2],[3,4],[\"abc\", \"def\"]]"))
+    print(parse("[[1,2],[3,4],[\"abc\", \"def\"]]"))
+    print(parse("{\"a\": 1}"))
+    print(parse("{\"a\": [1,2,3]}"))
